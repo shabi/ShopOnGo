@@ -6,23 +6,23 @@ target 'ShopOnGo' do
   use_frameworks!
 
   # Pods for ShopOnGo
+  #pod 'KYDrawerController'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Auth'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'SwiftyJSON'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'DateTimePicker'
+  pod 'FirebaseInstanceID', '2.0.0'
+  pod 'WalmartOpenApi'
 
   target 'ShopOnGoTests' do
     inherit! :search_paths
     # Pods for testing
-pod 'KYDrawerController'
-pod 'Firebase/Core'
-pod 'Firebase/Messaging'
-pod 'GoogleSignIn'
-pod 'Firebase/Auth'
-pod 'Alamofire'
-pod 'AlamofireImage'
-pod 'SwiftyJSON'
-pod 'GoogleMaps'
-pod 'GooglePlaces'
-pod 'DateTimePicker', '~>1.1.4'
-pod 'FirebaseInstanceID', '2.0.0'
-pod 'WalmartOpenApi'
   end
 
   target 'ShopOnGoUITests' do
