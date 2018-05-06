@@ -1,23 +1,23 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Alamofire (4.7.2)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
-  - DateTimePicker (1.1.4)
+  - DateTimePicker (1.2.1)
   - Firebase/Auth (4.13.0):
     - Firebase/Core
     - FirebaseAuth (= 4.6.1)
@@ -79,7 +79,6 @@ PODS:
     - GTMSessionFetcher/Core (= 1.1.15)
   - ISO8601 (0.6.0)
   - JSONModel (1.7.0)
-  - KYDrawerController (2.0.4)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -95,7 +94,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - DateTimePicker (~> 1.1.4)
+  - DateTimePicker
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Messaging
@@ -103,15 +102,14 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - GoogleSignIn
-  - KYDrawerController
   - SwiftyJSON
   - WalmartOpenApi
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  DateTimePicker: e3281e9b855e8081f6c524e3e720e9938eba2d65
+  DateTimePicker: c7b10f7dfe6eb06014c88df964a0a994f246b791
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
@@ -126,12 +124,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  KYDrawerController: cf5839877c442132123e9d482f458821026defdf
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   WalmartOpenApi: a68ded71e7464c1e118370826ad2d642ae790b1b
 
-PODFILE CHECKSUM: 97b7e8956d97debce333fccaa149ddecdcf0b70f
+PODFILE CHECKSUM: b630e2a0a988073e1e17619bc8857c81e857d801
 
 COCOAPODS: 1.4.0
