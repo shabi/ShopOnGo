@@ -13,18 +13,15 @@ class APIConstants: NSObject {
     
     public enum ServiceType: String {
         case none
-        case userStatus
-        case events
+        case items
         case login
-        case createAccount
-        case prayerTiming
-        case createEvent
-        case offlinePayment
-        case allUsers
-        case user
-        case userPaymentHistory
-        case removeEvent
-        
+        case registration
+        case getUser
+        case placeOrder
+        case getOrderDetail
+        case getTransactions
+        case getSItems
+        case getSShops
     }
     
     enum Version {
@@ -38,11 +35,24 @@ class APIConstants: NSObject {
     
     enum ApiUrls {
         static let userUrlStr = "http://azapi.baselinematters.com/api/accounts/userbyemailid/taiseer.joudeh@gmail.com"
-        //            static let accessToken = "https://\(Constants.LoggedInDetails.authServerURL)/auth/oauth2/token"
+        static let itemUrl = "https://api.walmartlabs.com/v1/items?format=json&apiKey=zu9yxdzx59x32araqkhaermm&upc=%@"
+        
+        static let loginUrl = "http://shopongo.baselinematters.com/sogAuth"
+        static let registrationUrl = "http://shopongo.baselinematters.com/api/UserApi/CustomerRegistration"
+        static let getUserUrl = "http://shopongo.baselinematters.com/api/UserApi/getUsers"
+        
+        static let placeOrderUrl = "http://smartshopapp.baselinematters.com/api/Order/placeOrder"
+        
+        //"http://shopongo.baselinematters.com/api/Order/placeOrder"
+        static let getOrderDetailUrl = "http://smartshopapp.baselinematters.com/api/Order/getOrderDetail"
+        static let getTransactionsUrl = "http://smartshopapp.baselinematters.com/api/Order/getTransactions"
+        static let getSItemsUrl = "http://smartshopapp.baselinematters.com/api/Item/getSItems"
+        static let getSShopsUrl = "http://smartshopapp.baselinematters.com/api/Shop/getSShops"
     }
     
     enum ServiceHeaders {
         static let contentType = "Content-Type"
+        static let Authorization = "Authorization"
         static let cartId = "cart_id"
     }
     
@@ -73,29 +83,19 @@ class APIConstants: NSObject {
     }
     
     enum PostNotify {
-        static let userProfile = "postNotifUserProfile"
-        static let userProfileError = "postNotifUserProfileError"
-        static let productDetail = "postNotifProductDetail"
-        static let userStatus = "userStatusDetail"
-        static let upComingEvents = "upComingEvents"
-        static let upComingEventsError = "upComingEventsError"
-        static let userStatusError = "userStatusError"
-        static let login = "login"
-        static let loginError = "loginError"
-        static let createAccount = "createAccount"
-        static let createAccountError = "createAccountError"
-        static let prayerTiming = "prayerTiming"
-        static let prayerTimingError = "prayerTimingError"
-        static let createEvents = "createEvents"
-        static let createEventsError = "createEventsError"
-        static let offlinePayment = "offlinePayment"
-        static let offlinePaymentError = "offlinePaymentError"
-        static let allUser = "allUser"
-        static let allUserError = "allUserError"
-        static let user = "user"
-        static let userError = "userError"
-        static let removeEvent = "removeEvent"
-        static let removeEventError = "removeEventError"
+        static let itemsEvent = "items"
+        static let itemsEventError = "itemsError"
+        static let placeOrderEvent = "placeOrder"
+        static let placeOrderEventError = "placeOrderError"
+        static let shopListEvent = "shopList"
+        static let shopListEventError = "shopListError"
+        static let loginEvent = "login"
+        static let loginEventError = "loginError"
+        static let registrationEvent = "registration"
+        static let registrationEventError = "registrationError"
+        static let transactionListEvent = "transactionList"
+        static let transactionListEventError = "transactionEventError"
+        
     }
     
     enum Errors {
@@ -109,15 +109,15 @@ class APIConstants: NSObject {
 
 
 
-open class AZProgressView {
+open class SGProgressView {
     
     var containerView = UIView()
     var progressView = UIView()
     var activityIndicator = UIActivityIndicatorView()
     
-    open class var shared: AZProgressView {
+    open class var shared: SGProgressView {
         struct Static {
-            static let instance: AZProgressView = AZProgressView()
+            static let instance: SGProgressView = SGProgressView()
         }
         return Static.instance
     }

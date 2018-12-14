@@ -17,6 +17,9 @@ class AppDataManager {
 //    var userRole: String = "user"
 //    var userPassword: String?
 //    var userName: String?
+    var cartItems: [SSItemList]?
+    var userId: String?
+    var shopId: String?
     
     
     //Singleton class

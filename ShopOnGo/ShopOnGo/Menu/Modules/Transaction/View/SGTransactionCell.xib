@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2Op-ua-3X6" customClass="SGTransactionCell" customModule="ShopOnGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnI-jm-HTE">
+                        <rect key="frame" x="4" y="0.0" width="379" height="45"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="0TQ-6Z-i2r">
+                                <rect key="frame" x="0.0" y="2.5" width="379" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TG0-aT-X4m">
+                                        <rect key="frame" x="0.0" y="0.0" width="223.5" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I49-yg-n5a">
+                                                <rect key="frame" x="0.0" y="0.0" width="223.5" height="18"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#OrderId:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-IF-J5A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2222111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDL-bT-Rlp">
+                                                        <rect key="frame" x="66" y="0.0" width="157.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="T8Y-hR-AKa">
+                                                <rect key="frame" x="0.0" y="22" width="223.5" height="18"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="#Transaction Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5P-7x-rVh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="22/11/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFa-d0-Mz8">
+                                                        <rect key="frame" x="113" y="0.0" width="110.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UcX-HH-Rn5">
+                                        <rect key="frame" x="237.5" y="0.0" width="141.5" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Amount: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87J-aI-TrD">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="$345345342r5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPN-BD-GGC">
+                                                <rect key="frame" x="62" y="0.0" width="79.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91763073205947876" green="0.91772621870040894" blue="0.9137309193611145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="0TQ-6Z-i2r" firstAttribute="centerY" secondItem="OnI-jm-HTE" secondAttribute="centerY" id="Zd7-Sv-oJu"/>
+                            <constraint firstAttribute="height" constant="45" id="bpz-1t-0eu"/>
+                            <constraint firstItem="0TQ-6Z-i2r" firstAttribute="leading" secondItem="OnI-jm-HTE" secondAttribute="leading" id="o33-Ot-Rx7"/>
+                            <constraint firstAttribute="trailing" secondItem="0TQ-6Z-i2r" secondAttribute="trailing" id="zYh-4a-00Q"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0kF-DF-jmB">
+                        <rect key="frame" x="4" y="51" width="379" height="41"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-ng-Mrf">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwa-28-kvJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shabi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDE-89-WWh">
+                                        <rect key="frame" x="51.5" y="0.0" width="38.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="oyX-rU-LcH">
+                                <rect key="frame" x="0.0" y="23" width="155" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Status: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtJ-Lu-8wJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBM-M9-xpU">
+                                        <rect key="frame" x="99" y="0.0" width="56" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="OnI-jm-HTE" firstAttribute="top" secondItem="2Op-ua-3X6" secondAttribute="top" id="FP2-kF-plh"/>
+                <constraint firstItem="0kF-DF-jmB" firstAttribute="leading" secondItem="2Op-ua-3X6" secondAttribute="leading" constant="4" id="JG0-dI-yzo"/>
+                <constraint firstAttribute="trailing" secondItem="OnI-jm-HTE" secondAttribute="trailing" constant="4" id="MOT-gT-Wxd"/>
+                <constraint firstAttribute="trailing" secondItem="0kF-DF-jmB" secondAttribute="trailing" constant="4" id="YvL-ea-u3e"/>
+                <constraint firstItem="OnI-jm-HTE" firstAttribute="leading" secondItem="2Op-ua-3X6" secondAttribute="leading" constant="4" id="ebN-Lf-8Wr"/>
+                <constraint firstItem="0kF-DF-jmB" firstAttribute="top" secondItem="OnI-jm-HTE" secondAttribute="bottom" constant="6" id="x6d-KG-Pf4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="7nA-VS-6Bf"/>
+            <size key="customSize" width="387" height="105"/>
+            <connections>
+                <outlet property="name" destination="VDE-89-WWh" id="PVL-Rp-63r"/>
+                <outlet property="netAmount" destination="UPN-BD-GGC" id="1Qz-kP-Vhr"/>
+                <outlet property="orderId" destination="rDL-bT-Rlp" id="zJ9-6e-yrK"/>
+                <outlet property="orderStatus" destination="XBM-M9-xpU" id="X1I-J8-gUC"/>
+                <outlet property="transDate" destination="TFa-d0-Mz8" id="QjF-dE-54Z"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="33.733133433283363"/>
+        </collectionViewCell>
+    </objects>
+</document>

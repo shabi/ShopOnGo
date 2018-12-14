@@ -6,7 +6,7 @@ target 'ShopOnGo' do
   use_frameworks!
 
   # Pods for ShopOnGo
-  #pod 'KYDrawerController'
+  pod 'KYDrawerController'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'GoogleSignIn'
@@ -19,6 +19,8 @@ target 'ShopOnGo' do
   pod 'DateTimePicker'
   pod 'FirebaseInstanceID', '2.0.0'
   pod 'WalmartOpenApi'
+  pod 'BarcodeScanner'
+  pod 'Stripe'
 
   target 'ShopOnGoTests' do
     inherit! :search_paths
